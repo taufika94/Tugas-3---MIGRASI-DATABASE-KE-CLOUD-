@@ -9,4 +9,4 @@ app.use(cors());
 app.use(express.json());
 app.use(UserRoute);
 
-app.listen(5001, () => console.log('Server up and running...'));
+app.listen(5000, () => console.log('Server up and running...'));
