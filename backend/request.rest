@@ -1,27 +1,25 @@
-GET http://localhost:5000/users
+GET http://localhost:5001/notes
 
 ###
-GET http://localhost:5000/users/1
+GET http://localhost:5001/notes/1
 
 ###
-POST  http://localhost:5000/users
+POST  http://localhost:5001/notes
 Content-Type: application/json
 
 {
-    "name" : "FIKA",
-    "email" : "taufika@gmail.com",
-    "gender" : "perempuan"
+    "judul" : "FIKA",
+    "content" : "taufika@gmail.com"
 }
 
 ###
-PATCH   http://localhost:5000/users/11
+PATCH   http://localhost:5001/notes/1
 Content-Type: application/json
 
 {
-    "name" : "Taufika",
-    "email" : "taufika@gmail.com",
-    "gender" : "perempuan"
+    "judul" : "FIKAA",
+    "content" : "taufika@gmail.com"
 }
 
 ###
-DELETE  http://localhost:5000/users/11
+DELETE  http://localhost:5001/notes/11
